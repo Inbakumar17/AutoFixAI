@@ -1,0 +1,531 @@
+{
+  "cases": [
+    {
+      "id": "typo-function",
+      "category": "undefined-name",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "typo-parameter",
+      "category": "undefined-name",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "typo-builtin",
+      "category": "undefined-name",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "typo-loop-variable",
+      "category": "undefined-name",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name",
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "typo-assigned-call",
+      "category": "undefined-name",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "import-os",
+      "category": "missing-import",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "import-math",
+      "category": "missing-import",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "import-json",
+      "category": "missing-import",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "import-sys",
+      "category": "missing-import",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "import-datetime",
+      "category": "missing-import",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "undefined-name"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "mutable-list",
+      "category": "mutable-default",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "mutable-default"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "mutable-dict",
+      "category": "mutable-default",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "mutable-default"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "mutable-kwonly-set",
+      "category": "mutable-default",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "mutable-default"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "unused-import",
+      "category": "unused",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "unused-import"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "unused-variable-pure",
+      "category": "unused",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "unused-variable"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "unused-variable-call",
+      "category": "unused",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "unused-variable"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "unused-import-partial",
+      "category": "unused",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "unused-import"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "zero-literal-param",
+      "category": "zero-division",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "zero-division"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "zero-named-divisor",
+      "category": "zero-division",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "zero-division"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "zero-empty-average",
+      "category": "zero-division",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "zero-division"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "zero-modulo-literal",
+      "category": "zero-division",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "zero-division"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "index-range-plus-one",
+      "category": "index-error",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "index-off-by-one"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "index-while-lte",
+      "category": "index-error",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "index-off-by-one"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "index-len-as-index",
+      "category": "index-error",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "index-off-by-one"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "index-range-from-one",
+      "category": "index-error",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "index-off-by-one"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "key-missing-toplevel",
+      "category": "key-error",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "key-error"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "key-in-function",
+      "category": "key-error",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "key-error"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "key-two-subscripts",
+      "category": "key-error",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "key-error"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "concat-str-plus-int",
+      "category": "str-concat",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "str-concat"
+      ],
+      "rounds": 1,
+      "seconds": 0.04
+    },
+    {
+      "id": "concat-int-plus-str",
+      "category": "str-concat",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "str-concat"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "concat-chain",
+      "category": "str-concat",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "str-concat",
+        "str-concat"
+      ],
+      "rounds": 2,
+      "seconds": 0.05
+    },
+    {
+      "id": "concat-call-result",
+      "category": "str-concat",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "str-concat"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "is-string",
+      "category": "is-literal",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "is-literal"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "is-not-int",
+      "category": "is-literal",
+      "runs": true,
+      "output_matches": true,
+      "correct": true,
+      "fixes": [
+        "is-literal"
+      ],
+      "rounds": 1,
+      "seconds": 0.03
+    },
+    {
+      "id": "UNSUP-syntax-colon",
+      "category": "unsupported",
+      "runs": false,
+      "output_matches": false,
+      "correct": false,
+      "fixes": [],
+      "rounds": 0,
+      "seconds": 0.01
+    },
+    {
+      "id": "UNSUP-logic-operator",
+      "category": "unsupported",
+      "runs": true,
+      "output_matches": false,
+      "correct": false,
+      "fixes": [],
+      "rounds": 0,
+      "seconds": 0.01
+    },
+    {
+      "id": "UNSUP-logic-range",
+      "category": "unsupported",
+      "runs": true,
+      "output_matches": false,
+      "correct": false,
+      "fixes": [],
+      "rounds": 0,
+      "seconds": 0.02
+    },
+    {
+      "id": "UNSUP-none-attribute",
+      "category": "unsupported",
+      "runs": false,
+      "output_matches": false,
+      "correct": false,
+      "fixes": [],
+      "rounds": 0,
+      "seconds": 0.02
+    },
+    {
+      "id": "UNSUP-infinite-loop",
+      "category": "unsupported",
+      "runs": false,
+      "output_matches": false,
+      "correct": false,
+      "fixes": [],
+      "rounds": 0,
+      "seconds": 2.04
+    },
+    {
+      "id": "UNSUP-recursion",
+      "category": "unsupported",
+      "runs": false,
+      "output_matches": false,
+      "correct": false,
+      "fixes": [],
+      "rounds": 0,
+      "seconds": 0.02
+    }
+  ],
+  "controls": [
+    {
+      "id": "ctl-similar-names",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-name-in-string",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-import-used",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-none-default",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-dict-get",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-correct-range",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-str-concat-ok",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-guarded-division",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-module-level-unused",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-is-none",
+      "unchanged": true,
+      "runs": true
+    },
+    {
+      "id": "ctl-class",
+      "unchanged": true,
+      "runs": true
+    }
+  ]
+}

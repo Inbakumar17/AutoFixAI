@@ -1,0 +1,471 @@
+[
+  {
+    "name": "bitcount",
+    "failing_tests": 9,
+    "total_tests": 9,
+    "baseline_pipeline_passes": false,
+    "tried": 1,
+    "generated": 29,
+    "seconds": 0.0,
+    "status": "identical",
+    "patch": "replace '^=' with '&='",
+    "operator": "arith-op",
+    "diff": "--- buggy\n+++ patched\n@@ -5 +5 @@\n-        n ^= n - 1\n+        n &= n - 1\n"
+  },
+  {
+    "name": "breadth_first_search",
+    "failing_tests": 1,
+    "total_tests": 5,
+    "baseline_pipeline_passes": false,
+    "tried": 78,
+    "generated": 78,
+    "seconds": 0.05,
+    "status": "failed"
+  },
+  {
+    "name": "bucketsort",
+    "failing_tests": 6,
+    "total_tests": 7,
+    "baseline_pipeline_passes": false,
+    "tried": 71,
+    "generated": 81,
+    "seconds": 0.5,
+    "status": "identical",
+    "patch": "use 'counts' instead of 'arr'",
+    "operator": "name-swap",
+    "diff": "--- buggy\n+++ patched\n@@ -7 +7 @@\n-    for i, count in enumerate(arr):\n+    for i, count in enumerate(counts):\n"
+  },
+  {
+    "name": "depth_first_search",
+    "failing_tests": 1,
+    "total_tests": 5,
+    "baseline_pipeline_passes": false,
+    "tried": 1,
+    "generated": 33,
+    "seconds": 0.0,
+    "status": "plausible",
+    "patch": "use 'goalnode' instead of 'nextnode'",
+    "operator": "name-swap",
+    "diff": "--- buggy\n+++ patched\n@@ -11 +11 @@\n-                search_from(nextnode) for nextnode in node.successors\n+                search_from(goalnode) for nextnode in node.successors\n",
+    "heldout": {
+      "verdict": "overfit",
+      "agree": 346,
+      "total": 400
+    }
+  },
+  {
+    "name": "detect_cycle",
+    "failing_tests": 1,
+    "total_tests": 6,
+    "baseline_pipeline_passes": false,
+    "tried": 29,
+    "generated": 29,
+    "seconds": 0.76,
+    "status": "failed"
+  },
+  {
+    "name": "find_first_in_sorted",
+    "failing_tests": 3,
+    "total_tests": 7,
+    "baseline_pipeline_passes": false,
+    "tried": 6,
+    "generated": 166,
+    "seconds": 0.51,
+    "status": "identical",
+    "patch": "replace '<=' with '<'",
+    "operator": "compare-op",
+    "diff": "--- buggy\n+++ patched\n@@ -5 +5 @@\n-    while lo <= hi:\n+    while lo < hi:\n"
+  },
+  {
+    "name": "find_in_sorted",
+    "failing_tests": 2,
+    "total_tests": 7,
+    "baseline_pipeline_passes": false,
+    "tried": 55,
+    "generated": 112,
+    "seconds": 0.04,
+    "status": "plausible",
+    "patch": "comparison operand: + 1",
+    "operator": "off-by-one",
+    "diff": "--- buggy\n+++ patched\n@@ -3 +3 @@\n-        if start == end:\n+        if start + 1 == end:\n",
+    "heldout": {
+      "verdict": "overfit",
+      "agree": 319,
+      "total": 400
+    }
+  },
+  {
+    "name": "flatten",
+    "failing_tests": 6,
+    "total_tests": 7,
+    "baseline_pipeline_passes": false,
+    "tried": 14,
+    "generated": 14,
+    "seconds": 0.01,
+    "status": "failed"
+  },
+  {
+    "name": "gcd",
+    "failing_tests": 5,
+    "total_tests": 6,
+    "baseline_pipeline_passes": false,
+    "tried": 8,
+    "generated": 25,
+    "seconds": 0.01,
+    "status": "identical",
+    "patch": "swap arguments 1 and 2 of the call",
+    "operator": "swap-args",
+    "diff": "--- buggy\n+++ patched\n@@ -5 +5 @@\n-        return gcd(a % b, b)\n+        return gcd(b, a % b)\n"
+  },
+  {
+    "name": "get_factors",
+    "failing_tests": 10,
+    "total_tests": 11,
+    "baseline_pipeline_passes": false,
+    "tried": 57,
+    "generated": 57,
+    "seconds": 0.04,
+    "status": "failed"
+  },
+  {
+    "name": "hanoi",
+    "failing_tests": 7,
+    "total_tests": 8,
+    "baseline_pipeline_passes": false,
+    "tried": 74,
+    "generated": 120,
+    "seconds": 0.07,
+    "status": "identical",
+    "patch": "use 'end' instead of 'helper'",
+    "operator": "name-swap",
+    "diff": "--- buggy\n+++ patched\n@@ -6 +6 @@\n-        steps.append((start, helper))\n+        steps.append((start, end))\n"
+  },
+  {
+    "name": "is_valid_parenthesization",
+    "failing_tests": 1,
+    "total_tests": 3,
+    "baseline_pipeline_passes": false,
+    "tried": 45,
+    "generated": 45,
+    "seconds": 0.02,
+    "status": "failed"
+  },
+  {
+    "name": "kheapsort",
+    "failing_tests": 3,
+    "total_tests": 4,
+    "baseline_pipeline_passes": false,
+    "tried": 32,
+    "generated": 32,
+    "seconds": 0.27,
+    "status": "failed"
+  },
+  {
+    "name": "knapsack",
+    "failing_tests": 6,
+    "total_tests": 10,
+    "baseline_pipeline_passes": false,
+    "tried": 1,
+    "generated": 230,
+    "seconds": 0.02,
+    "status": "identical",
+    "patch": "replace '<' with '<='",
+    "operator": "compare-op",
+    "diff": "--- buggy\n+++ patched\n@@ -12 +12 @@\n-            if weight < j:\n+            if weight <= j:\n"
+  },
+  {
+    "name": "kth",
+    "failing_tests": 4,
+    "total_tests": 7,
+    "baseline_pipeline_passes": false,
+    "tried": 205,
+    "generated": 205,
+    "seconds": 0.17,
+    "status": "failed"
+  },
+  {
+    "name": "lcs_length",
+    "failing_tests": 8,
+    "total_tests": 9,
+    "baseline_pipeline_passes": false,
+    "tried": 92,
+    "generated": 92,
+    "seconds": 0.07,
+    "status": "failed"
+  },
+  {
+    "name": "levenshtein",
+    "failing_tests": 5,
+    "total_tests": 7,
+    "baseline_pipeline_passes": false,
+    "tried": 79,
+    "generated": 79,
+    "seconds": 6.33,
+    "status": "failed"
+  },
+  {
+    "name": "lis",
+    "failing_tests": 4,
+    "total_tests": 12,
+    "baseline_pipeline_passes": false,
+    "tried": 224,
+    "generated": 224,
+    "seconds": 0.15,
+    "status": "failed"
+  },
+  {
+    "name": "longest_common_subsequence",
+    "failing_tests": 4,
+    "total_tests": 10,
+    "baseline_pipeline_passes": false,
+    "tried": 48,
+    "generated": 48,
+    "seconds": 1.1,
+    "status": "failed"
+  },
+  {
+    "name": "max_sublist_sum",
+    "failing_tests": 4,
+    "total_tests": 6,
+    "baseline_pipeline_passes": false,
+    "tried": 34,
+    "generated": 34,
+    "seconds": 0.02,
+    "status": "failed"
+  },
+  {
+    "name": "mergesort",
+    "failing_tests": 13,
+    "total_tests": 14,
+    "baseline_pipeline_passes": false,
+    "tried": 275,
+    "generated": 355,
+    "seconds": 0.61,
+    "status": "failed"
+  },
+  {
+    "name": "minimum_spanning_tree",
+    "failing_tests": 3,
+    "total_tests": 3,
+    "baseline_pipeline_passes": false,
+    "tried": 129,
+    "generated": 162,
+    "seconds": 0.07,
+    "status": "plausible",
+    "patch": "use 'u' instead of 'v'",
+    "operator": "name-swap",
+    "diff": "--- buggy\n+++ patched\n@@ -11 +11 @@\n-            for node in group_by_node[v]:\n+            for node in group_by_node[u]:\n",
+    "heldout": {
+      "verdict": "equivalent",
+      "agree": 400,
+      "total": 400
+    }
+  },
+  {
+    "name": "next_palindrome",
+    "failing_tests": 1,
+    "total_tests": 5,
+    "baseline_pipeline_passes": false,
+    "tried": 178,
+    "generated": 178,
+    "seconds": 0.12,
+    "status": "failed"
+  },
+  {
+    "name": "next_permutation",
+    "failing_tests": 8,
+    "total_tests": 8,
+    "baseline_pipeline_passes": false,
+    "tried": 7,
+    "generated": 177,
+    "seconds": 0.01,
+    "status": "plausible",
+    "patch": "replace '<' with '>'",
+    "operator": "compare-op",
+    "diff": "--- buggy\n+++ patched\n@@ -6 +6 @@\n-                if perm[j] < perm[i]:\n+                if perm[j] > perm[i]:\n",
+    "heldout": {
+      "verdict": "equivalent",
+      "agree": 400,
+      "total": 400
+    }
+  },
+  {
+    "name": "pascal",
+    "failing_tests": 4,
+    "total_tests": 5,
+    "baseline_pipeline_passes": false,
+    "tried": 31,
+    "generated": 178,
+    "seconds": 0.02,
+    "status": "identical",
+    "patch": "range bound: + 1",
+    "operator": "off-by-one",
+    "diff": "--- buggy\n+++ patched\n@@ -6 +6 @@\n-        for c in range(0, r):\n+        for c in range(0, r + 1):\n"
+  },
+  {
+    "name": "possible_change",
+    "failing_tests": 9,
+    "total_tests": 10,
+    "baseline_pipeline_passes": false,
+    "tried": 63,
+    "generated": 63,
+    "seconds": 0.04,
+    "status": "failed"
+  },
+  {
+    "name": "powerset",
+    "failing_tests": 4,
+    "total_tests": 5,
+    "baseline_pipeline_passes": false,
+    "tried": 32,
+    "generated": 32,
+    "seconds": 0.02,
+    "status": "failed"
+  },
+  {
+    "name": "quicksort",
+    "failing_tests": 1,
+    "total_tests": 13,
+    "baseline_pipeline_passes": false,
+    "tried": 1,
+    "generated": 93,
+    "seconds": 0.0,
+    "status": "plausible",
+    "patch": "replace '<' with '<='",
+    "operator": "compare-op",
+    "diff": "--- buggy\n+++ patched\n@@ -6 +6 @@\n-    lesser = quicksort([x for x in arr[1:] if x < pivot])\n+    lesser = quicksort([x for x in arr[1:] if x <= pivot])\n",
+    "heldout": {
+      "verdict": "equivalent",
+      "agree": 400,
+      "total": 400
+    }
+  },
+  {
+    "name": "reverse_linked_list",
+    "failing_tests": 2,
+    "total_tests": 3,
+    "baseline_pipeline_passes": false,
+    "tried": 19,
+    "generated": 19,
+    "seconds": 0.51,
+    "status": "failed"
+  },
+  {
+    "name": "rpn_eval",
+    "failing_tests": 3,
+    "total_tests": 6,
+    "baseline_pipeline_passes": false,
+    "tried": 25,
+    "generated": 140,
+    "seconds": 0.04,
+    "status": "plausible",
+    "patch": "swap arguments 1 and 2 of the call",
+    "operator": "swap-args",
+    "diff": "--- buggy\n+++ patched\n@@ -9 +9 @@\n-        }[symbol](a, b)\n+        }[symbol](b, a)\n",
+    "heldout": {
+      "verdict": "equivalent",
+      "agree": 400,
+      "total": 400
+    }
+  },
+  {
+    "name": "shortest_path_length",
+    "failing_tests": 2,
+    "total_tests": 4,
+    "baseline_pipeline_passes": false,
+    "tried": 305,
+    "generated": 305,
+    "seconds": 0.78,
+    "status": "failed"
+  },
+  {
+    "name": "shortest_path_lengths",
+    "failing_tests": 4,
+    "total_tests": 4,
+    "baseline_pipeline_passes": false,
+    "tried": 132,
+    "generated": 132,
+    "seconds": 0.1,
+    "status": "failed"
+  },
+  {
+    "name": "shortest_paths",
+    "failing_tests": 3,
+    "total_tests": 3,
+    "baseline_pipeline_passes": false,
+    "tried": 118,
+    "generated": 118,
+    "seconds": 0.07,
+    "status": "failed"
+  },
+  {
+    "name": "shunting_yard",
+    "failing_tests": 4,
+    "total_tests": 6,
+    "baseline_pipeline_passes": false,
+    "tried": 100,
+    "generated": 100,
+    "seconds": 0.36,
+    "status": "failed"
+  },
+  {
+    "name": "sieve",
+    "failing_tests": 5,
+    "total_tests": 6,
+    "baseline_pipeline_passes": false,
+    "tried": 53,
+    "generated": 53,
+    "seconds": 0.03,
+    "status": "failed"
+  },
+  {
+    "name": "sqrt",
+    "failing_tests": 6,
+    "total_tests": 7,
+    "baseline_pipeline_passes": false,
+    "tried": 58,
+    "generated": 58,
+    "seconds": 8.56,
+    "status": "failed"
+  },
+  {
+    "name": "subsequences",
+    "failing_tests": 10,
+    "total_tests": 12,
+    "baseline_pipeline_passes": false,
+    "tried": 107,
+    "generated": 107,
+    "seconds": 0.09,
+    "status": "failed"
+  },
+  {
+    "name": "to_base",
+    "failing_tests": 7,
+    "total_tests": 10,
+    "baseline_pipeline_passes": false,
+    "tried": 75,
+    "generated": 75,
+    "seconds": 2.81,
+    "status": "failed"
+  },
+  {
+    "name": "topological_ordering",
+    "failing_tests": 3,
+    "total_tests": 3,
+    "baseline_pipeline_passes": false,
+    "tried": 48,
+    "generated": 48,
+    "seconds": 0.28,
+    "status": "failed"
+  },
+  {
+    "name": "wrap",
+    "failing_tests": 5,
+    "total_tests": 5,
+    "baseline_pipeline_passes": false,
+    "tried": 96,
+    "generated": 96,
+    "seconds": 0.32,
+    "status": "failed"
+  }
+]
