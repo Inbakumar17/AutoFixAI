@@ -8,7 +8,7 @@ license: MIT
 repository-code: "https://github.com/KomaliG7/AutoFixAI"
 authors:
   - given-names: "Komali"
-    # TODO: add your family name / ORCID here before publishing
+  - family-names: "Gurram"
 keywords:
   - automated program repair
   - fault localization
