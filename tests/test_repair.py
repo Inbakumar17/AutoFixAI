@@ -105,7 +105,7 @@ def test_ignore_wins_over_select():
     src = "import os\n\nprint(1)\n"
     report = fix(src, execute=False, select={"unused-import"}, ignore={"unused-import"})
     assert not report.changed
-    
+
 def test_syntax_error_is_reported_not_crashed():
     report = fix("def broken(:\n    pass\n")
     assert not report.success and not report.changed

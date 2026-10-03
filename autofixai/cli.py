@@ -10,9 +10,10 @@ from pathlib import Path
 
 from . import __version__
 from .engine import repair
+from .fixers import default_fixers
 from .report import format_json, format_text
 from .testdriven import repair_with_tests
-from .fixers import default_fixers
+
 
 def split_command(command: str, posix: bool | None = None) -> list[str]:
     """Split a --test-cmd string into arguments (Windows-safe).

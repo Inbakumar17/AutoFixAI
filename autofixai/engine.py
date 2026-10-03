@@ -72,7 +72,7 @@ def repair(
 
     def wanted(rule: str) -> bool:
         return rule not in ignored and (selected is None or rule in selected)
-    
+
     active = [f for f in (fixers if fixers is not None else default_fixers()) if wanted(f.rule)]
 
     initial_issues = [i for i in analyze(source) if wanted(i.rule)]
